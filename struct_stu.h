@@ -5,6 +5,8 @@
 #ifndef CUSTOM_SYSTEM_STRUCT_STU_H
 #define CUSTOM_SYSTEM_STRUCT_STU_H
 
+#define DEBUG 0
+
 struct stu {
     int num;  //学生编号
     struct stu* next ;  //存放下一个节点（结构体）的地址

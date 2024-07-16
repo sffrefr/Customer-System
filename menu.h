@@ -5,6 +5,6 @@
 #ifndef CUSTOM_SYSTEM_MENU_H
 #define CUSTOM_SYSTEM_MENU_H
 
-void printf_menu();
+extern void printf_menu();
 
 #endif //CUSTOM_SYSTEM_MENU_H

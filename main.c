@@ -8,11 +8,15 @@
 #include <stdio.h>
 #include "menu.h"
 #include "link.h"
-
+#include "file.h"
 
 int main() {
-    printf_menu();      //打印功能
     struct stu* head = NULL;
+
+    read_file_to_link(&head);
+
+    printf_menu();      //打印功能
+
 
     while (1) {
         printf("----------------------\n");
@@ -36,6 +40,7 @@ int main() {
                 printf_stu(head);  //打印学生信息
                 break;
             case 6:
+                write_link_to_file(head);  //保存退出时的学生信息
                 exit_stu(head);   //退出系统
                 head = NULL;
                 return 0;
